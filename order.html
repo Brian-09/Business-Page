@@ -6,7 +6,135 @@
     <link rel="stylesheet" href="style.css">
     <title>Order Page</title>
 </head>
+
+<style>
+    body{
+        background-image: url(./images/endless-constellation\ \(1\).svg);
+        
+    }
+
+    *{
+        font-size: large;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        color:white;
+    }
+
+    h1{
+        font-size: xx-large;
+    }
+
+    input, button{
+        color:black;
+    }
+</style>
 <body>
-    
+    <nav class="sticky">
+        <a href="./index.html">Home</a>
+        <a href="./gallery.html">gallery</a>
+        <a href="./services.html">Services</a>
+        <a href="./order.html">Order</a>
+    </nav>
+    <form action='#'>
+    <h1>R&B Form</h1>
+    <p>Required Fields are Followed by <strong><abbr title='require'>*</abbr></strong></p>
+
+    <section>
+        <h2>Contact Information</h2>
+
+        <p>
+            <label for ="name"><span>Name:</span>
+                <abbr title="required">*</abbr>
+            </label>
+            <input type="text" id="name" name="username">
+        </p>
+
+        <p>
+            <label for="mail"><span>Email:</span>
+                <abbr title="required">*</abbr>
+            </label>
+            <input type="text" id="mail" name="usermail">
+        </p>
+
+        <p>
+            <label for="pwd"><span>Password:</span>
+                <abbr title="required">*</abbr>
+            </label>
+            <input type="password" id="pwd" name="password">
+        </p>
+
+        <p>
+            <label for="address"><span>Address:</span>
+                <abbr title="required">*</abbr>
+            </label>
+            <input type="text" id="address" name="address">
+        </p>
+
+        <h2>Purchases</h2>
+        <fieldset>
+            <legend>Checkout</legend>
+            <ul>
+                <li>
+                    <label for="Customized Mancave">
+                        <input type="checkbox" id="Customized Mancave" name="Checkout" value="M">
+                        Customized Mancave
+                    </label>
+                </li>
+                <li>
+                    <label for="Customized HQ">
+                        <input type="checkbox" id="Customized HQ" name="Checkout" value="H">
+                        Customized HQ
+                    </label>
+                </li>
+                <li>
+                    <label for="Customized Office">
+                        <input type="checkbox" id="Customized Office" name="Checkout" value="O">
+                        Customized Office
+                    </label>
+                </li>
+            </ul>
+        </fieldset>
+        
+        <h2>Payment Method</h2>
+        <fieldset>
+            <legend>Card Types</legend>
+            <ul>
+                <li>
+                    <label for="Visa">
+                        <input type="radio" id="Visa" name="Card Types" value="V">
+                        Visa
+                    </label>
+                </li>
+                <li>
+                    <label for="Master Card">
+                        <input type="radio" id="Master Card" name="Card Types" value="MC">
+                        Master Card
+                    </label>
+                </li>
+                <li>
+                    <label for="Capital One">
+                        <input type="radio" id="Capital One" name="Card Types" value="CO">
+                        Capital One
+                    </label>
+                </li>
+                <li>
+                    <label for="American Express">
+                        <input type="radio" id="American Express" name="Card Types" value="AE">
+                        American Express
+                    </label>
+                </li>
+            </ul>
+        </fieldset>
+
+        <h2>Feedback</h2>
+        <p>
+            <label for ="comments"><span>Comments:</span>
+            </label>
+            <input type="text" id="comments" name="comments">
+        </p>
+    </section>
+
+    <p>
+        <button  type="submit">Proceed to Checkout</button>
+    </p>
 </body>
 </html>
