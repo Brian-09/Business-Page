@@ -22,26 +22,29 @@
             background-color: maroon;
             width: 100%;
         }
-        main {
-
-        }
         footer {
             background-color: orangered;
             width: 100%;
             position: absolute;
-            top: 155%;
+            top: 150%;
             left: 0%;
         }
 
-        .image-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
-            grid-template-rows: 250px 250px;
+        .image-flex {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            flex-grow: 1;
+        }
+        .flex-column {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
         }
         .box {
             border: 2px black dashed;
-            width: 100%;
-            height: 100%;
+            width: 375px;
+            height: 225px;
         }
         .sticky {
             position: sticky;
@@ -82,12 +85,16 @@
         </video>
         <h2>Photos:</h2>
         <div class="image-grid">
-            <img class="box" src="./images/office-1.jpeg">
-            <img class="box" src="./images/man-cave-1.jpg">
-            <img class="box" src="./images/hq-1.webp">
-            <img class="box" src="./images/office-2.jpg">
-            <img class="box" src="./images/man-cave-2.webp">
-            <img class="box" src="./images/hq-2.jpg">
+            <div class="flex-column">
+                <img class="box" src="./images/office-1.jpeg">
+                <img class="box" src="./images/man-cave-1.jpg">
+                <img class="box" src="./images/hq-1.webp">
+            </div>
+            <div class="flex-column">
+                <img class="box" src="./images/office-2.jpg">
+                <img class="box" src="./images/man-cave-2.webp">
+                <img class="box" src="./images/hq-2.jpg">
+            </div>
         </div>
     </main>
 
