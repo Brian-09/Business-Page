@@ -28,6 +28,12 @@
     }
 </style>
 <body>
+    <nav class="sticky">
+        <a href="./index.html">Home</a>
+        <a href="./gallery.html">gallery</a>
+        <a href="./services.html">Services</a>
+        <a href="./order.html">Order</a>
+    </nav>
     <form action='#'>
     <h1>R&B Form</h1>
     <p>Required Fields are Followed by <strong><abbr title='require'>*</abbr></strong></p>
@@ -119,10 +125,16 @@
             </ul>
         </fieldset>
 
+        <h2>Feedback</h2>
+        <p>
+            <label for ="comments"><span>Comments:</span>
+            </label>
+            <input type="text" id="comments" name="comments">
+        </p>
     </section>
 
     <p>
-        <button type="submit">Confirm Order</button>
+        <button  type="submit">Proceed to Checkout</button>
     </p>
 </body>
 </html>
